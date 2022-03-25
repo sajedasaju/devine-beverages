@@ -23,6 +23,29 @@ const AllDrinks = () => {
 
     }
 
+    const length = cart.length;
+    const selectRandomProduct = () => {
+        let newCart
+        const random = Math.round(Math.random() * length);
+        {
+            const randomDRinks = cart.find(item => item.id === random);
+            if (randomDRinks) {
+                newCart = [randomDRinks];
+                setCart(newCart);
+            }
+
+
+        }
+
+        console.log(random)
+    }
+
+    const clearCart = () => {
+        const newCart = [];
+        setCart(newCart);
+    }
+
+
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -47,7 +70,11 @@ const AllDrinks = () => {
                 </div>
 
                 <div className='col-lg-2 col-md-2 bg-success'>
-                    <Cart cart={cart}></Cart>
+                    <Cart
+                        cart={cart}
+                        clearCart={clearCart}
+                        selectRandomProduct={selectRandomProduct}
+                    ></Cart>
                 </div>
             </div>
         </div>
