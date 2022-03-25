@@ -5,7 +5,23 @@ import './AllDrinks.css'
 
 const AllDrinks = () => {
     const [allDrinks, setAllDrinks] = useState([]);
+    const [cart, setCart] = useState([]);
 
+    const addToCart = (drinks) => {
+        let newCart;
+        const exist = cart.find(prevCartItem => prevCartItem.id === drinks.id)
+        if (!exist) {
+            newCart = [...cart, drinks];
+            setCart(newCart);
+        }
+        else {
+            const newCart = [...cart];
+            alert("already added")
+            setCart(newCart);
+
+        }
+
+    }
 
     useEffect(() => {
         fetch('data.json')
@@ -24,14 +40,14 @@ const AllDrinks = () => {
                             allDrinks.map(singleDrink => <SingleDrinkCard
                                 singleDrink={singleDrink}
                                 key={singleDrink.id}
-
+                                addToCart={addToCart}
                             ></SingleDrinkCard>)
                         }
                     </div>
                 </div>
 
                 <div className='col-lg-2 col-md-2 bg-success'>
-
+                    <Cart cart={cart}></Cart>
                 </div>
             </div>
         </div>
