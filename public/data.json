@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Blue Berry Mojito",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-697523874-1518629492.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "price": "900"
+    },
+    {
+        "id": 2,
+        "name": "Mango Mojito",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-567158219-1518630557.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "price": "540"
+    },
+    {
+        "id": 3,
+        "name": "Classic Mint Mojito",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-152833178-1518628093.jpg?crop=0.668xw:0.702xh;0.0969xw,0.0691xh&resize=980:*",
+        "price": "350"
+    },
+    {
+        "id": 4,
+        "name": "Strawberry Mojito",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-588933003-1518626377.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "price": "600"
+    },
+    {
+        "id": 5,
+        "name": "Raspberry Mojito",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-590611066-1518627401.jpg?crop=0.447xw:1.00xh;0.347xw,0&resize=980:*",
+        "price": "750"
+    },
+    {
+        "id": 6,
+        "name": "Prairie Cucumber Mojito",
+        "img": "https://hips.hearstapps.com/toc.h-cdn.co/assets/17/10/1600x1936/prariecucito.jpg?resize=980:*",
+        "price": "400"
+    },
+    {
+        "id": 7,
+        "name": "Watermelon Cucumber Mojito",
+        "img": "https://hips.hearstapps.com/toc.h-cdn.co/assets/17/10/640x888/watermelon-cucumber-mojito-vert.jpg?resize=980:*",
+        "price": "300"
+    },
+    {
+        "id": 8,
+        "name": "Cocojito",
+        "img": "https://hips.hearstapps.com/toc.h-cdn.co/assets/17/10/cocojito.jpg?crop=0.9836065573770492xw:1xh;center,top&resize=980:*",
+        "price": "360"
+    },
+    {
+        "id": 9,
+        "name": "PIneapple juice",
+        "img": "https://foodal.com/wp-content/uploads/2016/06/grilled-pineapple-mojito.jpg",
+        "price": "360"
+    },
+    {
+        "id": 10,
+        "name": "Lemon juice",
+        "img": "https://images.unsplash.com/photo-1556881286-fc6915169721?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        "price": "360"
+    }
+]
