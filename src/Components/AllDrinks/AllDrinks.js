@@ -78,7 +78,7 @@ const AllDrinks = () => {
                     </div>
                 </div>
 
-                <div className='col-lg-2 col-md-2 cart-section shadow-lg'>
+                <div className='col-lg-2 col-md-12 cart-section shadow-lg'>
                     <Cart
                         cart={cart}
                         clearCart={clearCart}
