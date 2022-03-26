@@ -9,17 +9,23 @@ const AllDrinks = () => {
     const [cart, setCart] = useState([]);
 
     const addToCart = (drinks) => {
-        let newCart;
-        const exist = cart.find(prevCartItem => prevCartItem.id === drinks.id)
-        if (!exist) {
-            newCart = [...cart, drinks];
-            setCart(newCart);
+        if (cart.length < 4) {
+            let newCart;
+            const exist = cart.find(prevCartItem => prevCartItem.id === drinks.id)
+            if (!exist) {
+                newCart = [...cart, drinks];
+                setCart(newCart);
+            }
+            else {
+                const newCart = [...cart];
+                alert("This item is already added")
+                setCart(newCart);
+
+            }
+
         }
         else {
-            const newCart = [...cart];
-            alert("already added")
-            setCart(newCart);
-
+            alert("You can not add more than 4 Items.")
         }
 
     }
