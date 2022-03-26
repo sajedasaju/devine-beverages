@@ -1,10 +1,11 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
+import './QuestionSection.css'
 
 const QuestionSection = () => {
     return (
-        <div className='mb-5 mt-1'>
-            <Accordion >
+        <div className='mb-5 mt-1 Question-Section'>
+            <Accordion className='accordian'>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header><h4>Difference Between Props and State?</h4></Accordion.Header>
                     <Accordion.Body>
