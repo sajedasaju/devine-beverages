@@ -24,12 +24,14 @@ const AllDrinks = () => {
 
     }
 
-    const length = cart.length;
+
     const selectRandomProduct = () => {
+        const length = cart.length;
+        console.log(cart, length)
         let newCart
         const random = Math.round(Math.random() * length);
         {
-            const randomDRinks = cart.find(item => item.id === random);
+            const randomDRinks = cart[random];
             if (randomDRinks) {
                 newCart = [randomDRinks];
                 setCart(newCart);
