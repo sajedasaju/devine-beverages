@@ -1,23 +1,15 @@
 .singleDrink-container{
-    /* background-color: #c4c4c4;
-    height: 570px;
-    width: 350px;
     padding: 15px;
     position: relative;
     justify-self: center;
-    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%, 0% 50%); */
-    /* background-color: #c4c4c4; */
-    /* height: 440px; */
-    border: 2px solid red;
+    background-color: #3252094d;
 
 }
-
 .image-container {
-    /* width: 296px; */
     height: 370px;
     background-color: #fff;
     padding: 15px;
-    /* clip-path: polygon(15% 0%, 100% 0, 100% 86%, 85% 100%, 0 100%, 0% 16%); */
+    clip-path: polygon(8% 0, 100% 0, 100% 20%, 100% 90%, 93% 100%, 20% 100%, 0 100%, 0 10%);
   }
   
   .image-container img {
@@ -25,3 +17,16 @@
     width: 100%;
     object-fit: contain;
   } 
+  .addToCart{
+    background-color: rgba(67, 98, 4, 0.781);
+    outline: none;
+    padding:5px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 19px;
+  }
+  .addToCart:hover{
+    background-color: rgba(67, 98, 4, 0.376);
+   color: black;
+  }
+ 

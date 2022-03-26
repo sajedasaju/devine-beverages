@@ -1,5 +1,17 @@
-.cart-img{
-    width: 40px;
-    object-fit: contain;
-    border-radius: 40%;
+.cart-container{
+    position: sticky;
+    top: 0;
 }
+  .cart-btn{
+    background-color: rgba(67, 98, 4, 0.781);
+    outline: none;
+    padding:5px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 19px;
+  }
+  .cart-btn:hover{
+    background-color: rgba(67, 98, 4, 0.376);
+   color: black;
+  }
+ 

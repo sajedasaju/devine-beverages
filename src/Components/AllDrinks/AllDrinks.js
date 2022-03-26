@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import QuestionSection from '../QuestionSection/QuestionSection';
 import SingleDrinkCard from '../SingleDrinkCard/SingleDrinkCard';
 import './AllDrinks.css'
 
@@ -54,11 +55,11 @@ const AllDrinks = () => {
             })
     }, []);
     return (
-        <div className='Beverages container '>
+        <div className='Beverages'>
 
-            <div className="row">
-                <div className='col-lg-10 col-md-10 col-12'>
-                    <div className='row'>
+            <div className="row m-0 p-0">
+                <div className='order-2 col-lg-8 container mt-5'>
+                    <div className='row g-4 '>
                         {
                             allDrinks.map(singleDrink => <SingleDrinkCard
                                 singleDrink={singleDrink}
@@ -69,7 +70,7 @@ const AllDrinks = () => {
                     </div>
                 </div>
 
-                <div className='col-lg-2 col-md-2 bg-success'>
+                <div className='col-lg-2 col-md-2 cart-section shadow-lg'>
                     <Cart
                         cart={cart}
                         clearCart={clearCart}
@@ -77,6 +78,7 @@ const AllDrinks = () => {
                     ></Cart>
                 </div>
             </div>
+            <QuestionSection></QuestionSection>
         </div>
 
     );
