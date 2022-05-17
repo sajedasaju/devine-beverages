@@ -14,8 +14,8 @@ const SingleDrinkCard = ({ singleDrink, addToCart }) => {
                     <img src={img} alt="" className='img-fluid' />
                 </div>
                 <div className='singleDrink-info'>
-                    <h1>{name}</h1>
-                    <h3>Price : ${price}</h3>
+                    <h1 className='fs-4'>{name}</h1>
+                    <h3 className='fs-5'>Price : <span className='fs-4'>${price}</span></h3>
 
                 </div>
                 <div className='add-to-cart '>

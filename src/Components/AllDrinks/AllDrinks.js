@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import swal from 'sweetalert';
 import Cart from '../Cart/Cart';
 import QuestionSection from '../QuestionSection/QuestionSection';
 import SingleDrinkCard from '../SingleDrinkCard/SingleDrinkCard';
@@ -18,14 +19,16 @@ const AllDrinks = () => {
             }
             else {
                 const newCart = [...cart];
-                alert("This item is already added")
+                swal("This item is already added!", " ", "success");
+
                 setCart(newCart);
 
             }
 
         }
         else {
-            alert("You can not add more than 4 Items.")
+            swal("You can not add more than 4 Items", " ", "warning");
+
         }
 
     }
